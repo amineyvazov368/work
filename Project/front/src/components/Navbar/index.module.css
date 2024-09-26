@@ -1,0 +1,98 @@
+nav {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+}
+.log{
+    color: black;
+    text-decoration: none;
+    font-size: larger;
+}
+
+.main {
+    margin: auto;
+    padding: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+}
+
+.one {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: larger;
+    margin-top: 5px;
+}
+Link{
+    text-decoration: none;
+    list-style: none;
+}
+
+.search {
+    border: 1px solid black;
+    position: relative;
+    padding: 10px;
+    display: flex;
+    width: 70%;
+    border-radius: 20px;
+}
+
+input {
+    width: 100%;
+    border: none;
+}
+
+.icon {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+.link{
+    color: black;
+}
+.right{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.right button{
+    border: none;
+    margin-right: 5px;
+    background-color: white ;
+    margin-top: -7px;
+}
+.card{
+    font-size: larger;
+}
+.user{
+    font-size: larger;
+}
+.lists{
+    width: 40%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+}
+.two{
+    margin-top: 15px;
+}
+.lists li a{
+    text-decoration: none;
+    color:  black;
+    
+}
+.lists li{
+    list-style: none;
+    font-weight: 700;
+}
+.lists li a:hover{
+color: rgb(219, 20, 20);
+
+}

@@ -1,0 +1,57 @@
+.container{
+    display: flex;
+    padding: 50px;
+    height: 60vh;
+    color: white;
+}
+.left , .right{
+    max-width: 50%;
+    justify-content: center;
+}
+.left{
+padding: 30px;
+margin-top: 2rem;
+}
+.left h2{
+    font-size: 40px;
+   
+}
+.left p{
+    font-size: 18px;
+    margin-top: 20px;
+  
+}
+.buy{
+    padding: 1rem 3rem;
+    margin-top: 20px;
+    border: none;
+    background: rgb(235, 231, 231);
+    color: black;
+    font-weight: 600;
+    border-radius: 30px;
+}
+.buy:hover{
+    background-color: blue;
+    color: white;
+}
+.button{
+    margin-top: 2rem;
+    display: flex;
+    gap: 15px;
+}
+.arrow{
+    font-size: 2rem;
+    color: black;
+}
+.right{
+    position: relative;
+   
+}
+.right img{
+    margin-top: -30px;
+    width: 400px;
+    height: 450px;
+    /* overflow: hidden; */
+    border: 1px solid;
+    border-radius: 55px;
+}
