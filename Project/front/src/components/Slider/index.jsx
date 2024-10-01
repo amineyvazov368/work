@@ -3,6 +3,7 @@ import Style from "./index.module.css"
 import { FaArrowCircleRight } from "react-icons/fa";
 import { FaArrowCircleLeft } from "react-icons/fa";
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom';
 const index = () => {
   const contents = [
     {
@@ -60,7 +61,7 @@ const index = () => {
           <div className={Style.left}>
             <h2>{contents[currentIndex].title}</h2>
             <p>{contents[currentIndex].text}</p>
-            <button className={Style.buy}>Buy Now</button>
+            <button className={Style.buy}><Link to={"/shop"} className={Style.buyNow}>Buy Now</Link></button>
             <div className={Style.button}>
               <div onClick={handlePrev} > <FaArrowCircleLeft  className={Style.arrow} /></div>
               <div onClick={handleNext}> <FaArrowCircleRight   className={Style.arrow}/>

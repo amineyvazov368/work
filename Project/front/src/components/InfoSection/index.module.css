@@ -1,0 +1,22 @@
+.info{
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+.row{
+    column-gap: 20px;
+}
+.col{
+   
+    padding: 10px;
+    text-align: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.col span{
+    font-size: 30px;
+    color: red;
+}

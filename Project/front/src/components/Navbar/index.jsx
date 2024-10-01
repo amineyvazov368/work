@@ -4,7 +4,9 @@ import { FaSearch } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import { FaShoppingCart } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
+import { useSelector } from 'react-redux';
 const index = () => {
+    const products = useSelector(state => state.cart.products)
   return (
     <nav>
         <div className={Style.main}>
@@ -18,7 +20,11 @@ const index = () => {
             </div>
             <div className={Style.right}>
                 <Link className={Style.link} to="/Cart">
-                <FaShoppingCart className={Style.card} /> </Link>
+                <FaShoppingCart className={Style.card} />
+                {products.length > 0 && (
+                    <span>{products.length}</span>
+                )}
+                 </Link>
                 <button>
                     Login | Register
                 </button>
@@ -31,12 +37,12 @@ const index = () => {
 
 
         <div className={Style.two}>
-        <ul className={Style.lists}>
-            <li><a href="">Home</a></li>
-            <li><a href="">Shop</a></li>
-            <li><a href="">Contact</a></li>
-            <li><a href="">About</a></li>
-        </ul>
+        <div className={Style.lists}>
+            <Link className={Style.lin}  to="/">Home</Link>
+            <Link className={Style.lin} to="/shop">Shop</Link>
+            <Link className={Style.lin} to="/cart">About</Link>
+            <Link className={Style.lin} to="/">Contact</Link>
+        </div>
         </div>
         </div>
     </nav>

@@ -1,0 +1,58 @@
+.empty{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.full{
+    width: 80%;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 30px;
+   
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.item{
+    display: flex;
+    justify-content: space-between;
+  
+}
+.total{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    padding: 20px;
+    width: 27%;
+    height: 350px;
+}
+table {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-collapse: collapse;
+}
+.bold{
+    font-size: larger;
+}
+.proced{
+    width: 100%;
+    padding: 5px;
+    background-color: rgb(224, 39, 39);
+    color: aliceblue;
+}
+.price{
+    display: flex;
+    justify-content: space-between;
+}
+.picture img{
+    width: 120px;
+    height: 80px;
+}
+.trash{
+    color: red;
+
+}
+tr td{
+    width: 100px;
+}
+td button{
+    border: none;
+}
