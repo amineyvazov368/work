@@ -19,7 +19,7 @@ const index = () => {
                 </form>
             </div>
             <div className={Style.right}>
-                <Link className={Style.link} to="/Cart">
+                <Link className={Style.link} to="/cart">
                 <FaShoppingCart className={Style.card} />
                 {products.length > 0 && (
                     <span>{products.length}</span>
@@ -40,7 +40,7 @@ const index = () => {
         <div className={Style.lists}>
             <Link className={Style.lin}  to="/">Home</Link>
             <Link className={Style.lin} to="/shop">Shop</Link>
-            <Link className={Style.lin} to="/cart">About</Link>
+            <Link className={Style.lin} to="/">About</Link>
             <Link className={Style.lin} to="/">Contact</Link>
         </div>
         </div>

@@ -6,13 +6,36 @@
 .productTitle {
     text-align: center;
 }
-
+.cat:hover{
+    cursor: pointer;
+}
 .container {
     padding-top: 10px;
     padding-bottom: 10px;
     width: 80%;
     margin: auto;
    
+}
+.category{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.cat{
+    border: 1px solid red;
+    padding: 15px;
+    border-radius: 50%;
+    background-color: brown;
+    color: aliceblue;
+}
+.cat span{
+    font-size: 20px;
+}
+.icons{
+    font-size: 30px;
 }
 .row{
     column-gap: 40px;
