@@ -1,20 +1,34 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Style from "./index.module.css"
 import { FaSearch } from "react-icons/fa";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { FaShoppingCart } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { setSearchTerm } from '../../redux/productSlice';
+
+
+
 const index = () => {
     const products = useSelector(state => state.cart.products)
+    const dispatch = useDispatch()
+    const [search , setSearch]= useState()
+    const navigate= useNavigate()
+
+    const handleSearch= (e)=>{
+      
+        dispatch(setSearchTerm(search))
+        navigate("/filter-data")
+
+    }
   return (
-    <nav>
+    
         <div className={Style.main}>
         <div className={Style.one} >
             <div className={Style.logo}><b><Link className={Style.log} to="/">e-Shop</Link></b></div>
             <div className={Style.search} >
-                <form  >
-                <input type="text" placeholder='product name' />
+                <form  onInput={handleSearch} >
+                <input type="text" placeholder='product name' className={Style.input} onChange={(e)=>setSearch(e.target.value)} />
                 <FaSearch  className={Style.icon}/>
                 </form>
             </div>
@@ -25,7 +39,7 @@ const index = () => {
                     <span>{products.length}</span>
                 )}
                  </Link>
-                <button>
+                <button className={Style.non}>
                     Login | Register
                 </button>
                 <button>
@@ -45,7 +59,7 @@ const index = () => {
         </div>
         </div>
         </div>
-    </nav>
+  
   )
 }
 

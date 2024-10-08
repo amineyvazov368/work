@@ -36,7 +36,7 @@ const index = () => {
           <div className={Style.container}>
             <Row className={Style.row}>
                 {infoItem && infoItem.map((item, index)=>(
-                     <Col key={index} className={Style.col}>
+                     <Col md={3} sm={12} lg={3} key={index} className={Style.col}>
                         <span>{item.icon}</span>
                     <h5> {item.title}</h5>
                     <p>{item.description}</p>

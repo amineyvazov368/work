@@ -6,9 +6,16 @@
 border-radius: 10px;
 
 }
+.link{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    display: inline;
+}
 
 .cardImg {
-  
+  padding: 10px;
     height: 180px;
     width: 100%;
 }
@@ -58,3 +65,12 @@ cursor: pointer;
     display: none;
     border: 1px solid red;
 }
+
+@media only screen and (max-width: 600px) {
+   .plus{
+    padding: 2px;
+    width: 15%;
+    margin-top: 5px;
+   }
+
+  }

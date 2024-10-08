@@ -55,6 +55,7 @@ ul li{
     .first {
       flex-direction: column;
     }
+    
   
     .one, .two, .three, .four {
       flex: 1 1 100%;

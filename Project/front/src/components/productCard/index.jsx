@@ -5,6 +5,7 @@ import { FaStar } from "react-icons/fa";
 import { FaPlus } from "react-icons/fa";
 import {  useDispatch } from 'react-redux';
 import { addToCart } from '../../redux/cartSlice';
+import { Link } from 'react-router-dom';
 const index = ({product}) => {
     const dispatch = useDispatch()
     const handleAddToCart = (e,product) =>{
@@ -15,7 +16,8 @@ const index = ({product}) => {
     }
   return (
     <>
-    <Col md={2} className={Style.card}>
+    <Col md={2}  sm={12}  lg={2} className={Style.card}>
+    <Link to={`/product/${product.id}`} className={Style.link}>
    <div className={Style.cardImg}> <img src={product.image} alt="" /></div>
     <div className={Style.cardInfo}>
     <h5>{product.name}</h5>
@@ -34,7 +36,7 @@ const index = ({product}) => {
        </div>
     
     </div>
-    
+    </Link>
     </Col>
     </>
   )

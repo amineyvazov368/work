@@ -16,7 +16,7 @@ export const mockData=[
     },
     {
         id:3,
-        name:"Product 3",
+        name:"amin",
         image:"https://media.istockphoto.com/id/486993228/photo/smart-watch.jpg?s=612x612&w=0&k=20&c=dVKA7YSTjnhzYAoYcxDwGEuV18QV-K-YuZCABnjt8pE=",
         price:105.99,
         category:"smart"
